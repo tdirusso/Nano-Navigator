@@ -1,0 +1,245 @@
+.nano-nav-button {
+    border-bottom: 2px solid rgb(147, 147, 147);
+    border-top: 2px solid rgb(147, 147, 147);
+    cursor: pointer;
+}
+
+.nano-nav-button div {
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 300;
+    top: center;
+}
+
+.nano-nav-button:hover {
+    background: #939393;
+}
+
+.nanonav-modal {
+    display: none;
+    position: absolute;
+    padding-top: 30px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: 999999999 !important;
+}
+
+.nanonav-modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 30px;
+    border: 1px solid #888;
+    width: 80%;
+    border-radius: 5px;
+    box-shadow: 0px 10px 50px 3px #000;
+}
+
+.nanonav-sections {
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif !important;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.nanonav-section {
+    height: 10px;
+    margin: 5px;
+    width: 30%;
+    border-radius: 5px;
+    border: 1px solid lightgray;
+    height: auto;
+    padding: 5px;
+}
+
+.nanonav-logo {
+    background: url(https://342sv54cwf1w32bxz36tm0bv-wpengine.netdna-ssl.com/wp-content/uploads/2019/05/bold360_2018.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: block;
+    height: 30px;
+    width: 175px;
+    margin: 15px auto;
+    margin-top: 0px;
+}
+
+.nanonav-sections ul {
+    margin-bottom: 0px !important;
+}
+
+.nanonav-list {
+    padding-left: 0px;
+    list-style: none;
+    font-size: 15px;
+}
+
+.nanonav-article-labels {
+    margin-top: 10px;
+}
+
+.nanonav-article-label {
+    width: auto;
+    height: auto;
+    display: inline-block;
+    padding: 2px 5px;
+    margin-right: 7px;
+    margin-bottom: 3px;
+}
+
+.nanonav-article-label span {
+    font-size: 13px;
+}
+
+.nanonav-item:last-child {
+    border-bottom: 1px solid transparent;
+}
+
+.nanonav-item {
+    border: 1px solid transparent;
+    margin: 5px 3px;
+    border-bottom: 1px solid lightgrey;
+    padding: 10px 10px;
+}
+
+.nanonav-item:hover {
+    cursor: pointer;
+    background: #f7f7f7;
+    border: 1px solid lightgrey !important;
+    border-radius: 5px;
+}
+
+.nanonav-widget-home {
+    height: 18px;
+    width: 18px;
+    background: url(https://s3.amazonaws.com/ps.projects/Testing/NanoNav/widget-home.svg);
+    float: right;
+    background-size: contain;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+.nanonav-widget-code {
+    height: 18px;
+    width: 18px;
+    background: url(https://s3.amazonaws.com/ps.projects/Testing/NanoNav/widget-code.svg);
+    float: right;
+    background-size: contain;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+#nanonav-widgets .nanonav-item:hover, #nanonav-supportcenters .nanonav-item:hover {
+    cursor: default;
+}
+
+#nanonav-widgets .nanonav-item {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.nanonav-channel-chat {
+    height: 18px;
+    width: 18px;
+    background: url(https://s3.amazonaws.com/ps.projects/Testing/NanoNav/channel-chat.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    left: 10px;
+    top: 2px;
+}
+
+.nanonav-channel-email {
+    height: 18px;
+    width: 18px;
+    background: url(https://s3.amazonaws.com/ps.projects/Testing/NanoNav/channel-email.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    left: 10px;
+    top: 3px;
+}
+
+.nanonav-channel-phone {
+    height: 18px;
+    width: 18px;
+    background: url(https://s3.amazonaws.com/ps.projects/Testing/NanoNav/channel-phone.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    left: 10px;
+    top: 2px;
+}
+
+.nanonav-support-center-settings {
+    height: 18px;
+    width: 18px;
+    background: url(https://s3.amazonaws.com/ps.projects/Testing/NanoNav/support-center-settings.svg);
+    float: right;
+    background-size: contain;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+.nanonav-close {
+    font-size: 2rem;
+    float: right;
+    color: grey;
+    cursor: pointer;
+    position: relative;
+    top: -50px;
+}
+
+.nanonav-close:hover {
+    opacity: 0.5;
+}
+
+.nanonav-empty {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #bfbfbf;
+}
+
+.nanonav-header {
+    text-align: center;
+    font-weight: bold;
+    color: #04527f;
+    font-size: 21px;
+    margin: 5px 20px 15px 20px;
+}
+
+.nanonav-sub-section-header {
+    color: #66d9fb;
+    font-size: 17px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.nanonav-widgets-all,
+.nanonav-providers-all,
+#nanonav-articles .nanonav-list {
+    max-height: 350px;
+    overflow-y: auto;
+}
+
+#nanonav-articles .nanonav-list {
+    max-height: 550px;
+    overflow-y: auto;
+}

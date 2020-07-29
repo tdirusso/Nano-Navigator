@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NanoDev Extension</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    <script src="../scripts/popup.js"></script>
+
+    <style>
+        html {
+            max-height: 500px;
+            overflow-y: scroll;
+        }
+
+        body {
+            width: 400px;
+            max-height: 500px;
+            padding: 15px;
+            overflow-y: scroll;
+        }
+
+        th {
+            border-top: none !important;
+        }
+
+        td,
+        th {
+            padding-left: 5px !important;
+        }
+
+        #keys-table {
+            margin-bottom: 35px;
+            width: 100%;
+        }
+
+        #new-account-form {
+            margin-bottom: 10px;
+        }
+
+        #new-account-form input {
+            margin: 8px 0;
+        }
+
+        .delete-row-button {
+            background: url(https://s3.amazonaws.com/ps.projects/Testing/delete-row.svg);
+            width: 16px;
+            height: 16px;
+            float: right;
+            margin-top: 3px;
+            cursor: pointer;
+        }
+
+        footer {
+            margin-top: 20px;
+        }
+
+        footer p {
+            margin-bottom: 0px !important;
+            font-size: 0.75rem;
+            font-style: italic;
+            display: inline-block;
+        }
+
+        p.not-connected {
+            color: red;
+        }
+
+        p.connected {
+            color: limegreen;
+        }
+    </style>
+</head>
+
+<body>
+    <p>Add a new <b>account</b> & corresponding <b>API key</b> below to enable enhanced navigation features for the
+        specified account.</p>
+    <div class="custom-control custom-switch" style="margin-bottom: 15px;">
+        <input type="checkbox" style="cursor: pointer;" class="custom-control-input" id="activator">
+        <label class="custom-control-label" for="activator">Active</label>
+    </div>
+    <h4><span class="badge badge-secondary">API Keys</span></h4>
+
+    <table id="keys-table" class="table table-striped">
+        <thead>
+            <tr>
+                <th scope="col">Account</th>
+                <th scope="col">Key</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+
+    <form id="new-account-form">
+        <input id="new-account" class="form-control form-control-sm" type="text" placeholder="Account">
+        <input id="new-key" class="form-control form-control-sm" type="text" placeholder="API Key">
+        <button id="add-button" type="button" class="btn btn-info btn-sm">Add</button>
+    </form>
+
+</body>
+
+<footer>
+    <p>Status:</p>
+    <p id="status" class="not-connected">Not Connected</p>
+</footer>
+
+</html>

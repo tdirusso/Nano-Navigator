@@ -3,7 +3,7 @@
     "name": "Nano Navigator",
     "author": "Tim DiRusso",
     "version": "1.0.0",
-    "description": "Enables ease-of-navigation in the NanoRep console to increase engineering/development and configuration productivity.",
+    "description": "Allows for easier article, widget and custom provider navigation throughout a Bold360ai Knowledge Base.",
     "icons": {
         "128": "icon.png"
     },
